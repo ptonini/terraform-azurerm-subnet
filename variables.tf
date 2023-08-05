@@ -1,11 +1,11 @@
 variable "name" {}
 
 variable "rg" {
-  type = object({name = string})
+  type = object({ name = string })
 }
 
 variable "vnet" {
-  type = object({name = string})
+  type = object({ name = string })
 }
 variable "address_prefixes" {
   type = list(string)
@@ -24,7 +24,7 @@ variable "delegation" {
   type = object({
     name = string
     service_delegation = object({
-      name = string
+      name    = string
       actions = list(string)
     })
   })
