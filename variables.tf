@@ -7,6 +7,7 @@ variable "rg" {
 variable "vnet" {
   type = object({ name = string })
 }
+
 variable "address_prefixes" {
   type = list(string)
 }
