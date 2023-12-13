@@ -19,7 +19,7 @@ resource "azurerm_subnet" "this" {
 }
 
 resource "azurerm_subnet_nat_gateway_association" "this" {
-  count          = var.nat_gateway == null ? 0 : 1
+  count          = var.nat_gateway_id == null ? 0 : 1
   subnet_id      = azurerm_subnet.this.id
-  nat_gateway_id = var.nat_gateway
+  nat_gateway_id = var.nat_gateway_id
 }

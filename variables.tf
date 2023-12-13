@@ -12,7 +12,7 @@ variable "address_prefixes" {
   type = list(string)
 }
 
-variable "nat_gateway" {
+variable "nat_gateway_id" {
   default = null
 }
 
